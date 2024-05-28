@@ -6,10 +6,10 @@ import plotly.express as px
 import pandas as pd
 
 st.set_page_config(layout="wide", 
-                   page_title='Sensitivity Study Demo',
+                   page_title='Sensitivity Study',
                    page_icon='8100464.png')
 
-st.markdown('''For this study a PNLL reference building was selected to be subjected to a parametric study.  
+st.markdown('''For this study a PNNL prototype building was selected to be subjected to a parametric study.  
          As the climate in question is 2A, the Cooling Load Intensity is the main subject of the sensitivity study.  
          The variables at play are horizontal slat angle, depth of slats independent to cardinal directions, and  
          the number of slats.
