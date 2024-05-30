@@ -887,8 +887,8 @@
    "rooms": [
       {
          "type": "Room",
-         "identifier": "211de8d3bac74c7aa05b4be0d54b5fb5",
-         "display_name": "211de8d3bac74c7aa05b4be0d54b5fb5",
+         "identifier": "8707126e5f84427084711a4105268171",
+         "display_name": "8707126e5f84427084711a4105268171",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -1581,8 +1581,8 @@
       },
       {
          "type": "Room",
-         "identifier": "4c5e2b90e59b4894b1f53ad8b72817d6",
-         "display_name": "4c5e2b90e59b4894b1f53ad8b72817d6",
+         "identifier": "fde360ee80384b7381f2dde77baadada",
+         "display_name": "fde360ee80384b7381f2dde77baadada",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -2271,8 +2271,8 @@
       },
       {
          "type": "Room",
-         "identifier": "c3dd3ca174c34f5d802335f77d8e0ae0",
-         "display_name": "c3dd3ca174c34f5d802335f77d8e0ae0",
+         "identifier": "13abf4b51a41456dbf7d79c09b3ad6c9",
+         "display_name": "13abf4b51a41456dbf7d79c09b3ad6c9",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -3155,8 +3155,8 @@
       },
       {
          "type": "Room",
-         "identifier": "e2f4b34e4d9b49ecb119e415eef50874",
-         "display_name": "e2f4b34e4d9b49ecb119e415eef50874",
+         "identifier": "0112d5f6d3364e3881b9e57720b42aae",
+         "display_name": "0112d5f6d3364e3881b9e57720b42aae",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -4039,8 +4039,8 @@
       },
       {
          "type": "Room",
-         "identifier": "0b646e9ce1ac4a20aa5b7bc27743ea57",
-         "display_name": "0b646e9ce1ac4a20aa5b7bc27743ea57",
+         "identifier": "012510b292b84be09cb719cd641648a6",
+         "display_name": "012510b292b84be09cb719cd641648a6",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -4919,8 +4919,8 @@
       },
       {
          "type": "Room",
-         "identifier": "d7e37dac4a8748dbb5112a6e97dfe6bd",
-         "display_name": "d7e37dac4a8748dbb5112a6e97dfe6bd",
+         "identifier": "5e5ea70b890145db8d0facaae4df54aa",
+         "display_name": "5e5ea70b890145db8d0facaae4df54aa",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -5613,8 +5613,8 @@
       },
       {
          "type": "Room",
-         "identifier": "1e6ac22653494784958519974b008f77",
-         "display_name": "1e6ac22653494784958519974b008f77",
+         "identifier": "56fd11f2c0254a60bbb3740cb36f8aea",
+         "display_name": "56fd11f2c0254a60bbb3740cb36f8aea",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -6497,8 +6497,8 @@
       },
       {
          "type": "Room",
-         "identifier": "34093fdbcdb24187b57ad979cdb114d5",
-         "display_name": "34093fdbcdb24187b57ad979cdb114d5",
+         "identifier": "e8dd4e47dfb94a24b3cefc9c83241fd6",
+         "display_name": "e8dd4e47dfb94a24b3cefc9c83241fd6",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -7377,8 +7377,8 @@
       },
       {
          "type": "Room",
-         "identifier": "6a41ba85912245a3be22ad9baaafe530",
-         "display_name": "6a41ba85912245a3be22ad9baaafe530",
+         "identifier": "9dd312d1fa4e4509abc3e5a3fcb3c637",
+         "display_name": "9dd312d1fa4e4509abc3e5a3fcb3c637",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -8071,8 +8071,8 @@
       },
       {
          "type": "Room",
-         "identifier": "9bdcc76c77c34c47966120d3a329b1f9",
-         "display_name": "9bdcc76c77c34c47966120d3a329b1f9",
+         "identifier": "9a7fa5c5d25c4c809385411cb13501c5",
+         "display_name": "9a7fa5c5d25c4c809385411cb13501c5",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -8955,8 +8955,8 @@
       },
       {
          "type": "Room",
-         "identifier": "9946a24ed940481caee21bb71558443f",
-         "display_name": "9946a24ed940481caee21bb71558443f",
+         "identifier": "6c7321dcf6474d63bce653e3372c6926",
+         "display_name": "6c7321dcf6474d63bce653e3372c6926",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -9839,8 +9839,8 @@
       },
       {
          "type": "Room",
-         "identifier": "75062e6076c449c5ac8355038ca1977c",
-         "display_name": "75062e6076c449c5ac8355038ca1977c",
+         "identifier": "e7d17b7c6b7f4ec5a09f44c11d7d0a4a",
+         "display_name": "e7d17b7c6b7f4ec5a09f44c11d7d0a4a",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -10533,8 +10533,8 @@
       },
       {
          "type": "Room",
-         "identifier": "ca595bcca2e848d68dc6e0db2825a89b",
-         "display_name": "ca595bcca2e848d68dc6e0db2825a89b",
+         "identifier": "90aba2be4656400bace99448bd400f49",
+         "display_name": "90aba2be4656400bace99448bd400f49",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -11417,8 +11417,8 @@
       },
       {
          "type": "Room",
-         "identifier": "6ce421937a8146138d6ccb6f7b930144",
-         "display_name": "6ce421937a8146138d6ccb6f7b930144",
+         "identifier": "6b9f7efa596a427db6d2d90b192a7c00",
+         "display_name": "6b9f7efa596a427db6d2d90b192a7c00",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -12217,8 +12217,8 @@
       },
       {
          "type": "Room",
-         "identifier": "0970c1de49be4d2dad872288c340409c",
-         "display_name": "0970c1de49be4d2dad872288c340409c",
+         "identifier": "cb401f17f3ac4933acb3ff3663ec016e",
+         "display_name": "cb401f17f3ac4933acb3ff3663ec016e",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -13101,8 +13101,8 @@
       },
       {
          "type": "Room",
-         "identifier": "ffe5d30521434a9d8532de314fc86c88",
-         "display_name": "ffe5d30521434a9d8532de314fc86c88",
+         "identifier": "8dac55f5a9fc4a3dabf56c763fdb2458",
+         "display_name": "8dac55f5a9fc4a3dabf56c763fdb2458",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -13985,8 +13985,8 @@
       },
       {
          "type": "Room",
-         "identifier": "511ae79ab408472f856e7cc0e28aa878",
-         "display_name": "511ae79ab408472f856e7cc0e28aa878",
+         "identifier": "19fc80ef6ea44b81a347ab2ffbf37633",
+         "display_name": "19fc80ef6ea44b81a347ab2ffbf37633",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -14679,8 +14679,8 @@
       },
       {
          "type": "Room",
-         "identifier": "32baff69c5054a988a5e1bda949ba5be",
-         "display_name": "32baff69c5054a988a5e1bda949ba5be",
+         "identifier": "464d97afbb21499da9202629627f840c",
+         "display_name": "464d97afbb21499da9202629627f840c",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -15563,8 +15563,8 @@
       },
       {
          "type": "Room",
-         "identifier": "63bd853f1f864813b7a3ed9c28cd1ac0",
-         "display_name": "63bd853f1f864813b7a3ed9c28cd1ac0",
+         "identifier": "5009271220334b8a82831f0a9ef3e67c",
+         "display_name": "5009271220334b8a82831f0a9ef3e67c",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -16336,8 +16336,8 @@
       },
       {
          "type": "Room",
-         "identifier": "9b3cd4bf869b441faae423765c5f3f1d",
-         "display_name": "9b3cd4bf869b441faae423765c5f3f1d",
+         "identifier": "56b19cf911d64a17828b30abf4617283",
+         "display_name": "56b19cf911d64a17828b30abf4617283",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {

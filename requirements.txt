@@ -2,6 +2,6 @@ streamlit
 plotly
 honeybee-energy
 honeybee-radiance
-honeybee-vtk
+honeybee-vtk @ git+https://github.com/unconstraineddev/honeybee-vtk.git
 streamlit-vtkjs>=0.2.0
 ladybug_rhino
