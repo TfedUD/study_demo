@@ -2,5 +2,5 @@ streamlit
 plotly
 honeybee-energy
 honeybee-radiance
-honeybee-vtk 
+honeybee-vtk
 ladybug_rhino
