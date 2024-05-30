@@ -55,26 +55,13 @@
                },
                {
                   "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Ground Slab",
+                  "identifier": "Generic Roof",
                   "materials": [
+                     "Generic Roof Membrane",
                      "Generic 50mm Insulation",
-                     "Generic HW Concrete"
-                  ]
-               },
-               {
-                  "type": "AirBoundaryConstructionAbridged",
-                  "identifier": "Generic Air Boundary",
-                  "air_mixing_per_area": 0.1,
-                  "air_mixing_schedule": "Always On"
-               },
-               {
-                  "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Underground Wall",
-                  "materials": [
-                     "Generic 50mm Insulation",
-                     "Generic HW Concrete",
-                     "Generic Wall Air Gap",
-                     "Generic Gypsum Board"
+                     "Generic LW Concrete",
+                     "Generic Ceiling Air Gap",
+                     "Generic Acoustic Tile"
                   ]
                },
                {
@@ -89,21 +76,21 @@
                },
                {
                   "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Interior Floor",
+                  "identifier": "Generic Underground Wall",
                   "materials": [
-                     "Generic Acoustic Tile",
-                     "Generic Ceiling Air Gap",
-                     "Generic LW Concrete"
+                     "Generic 50mm Insulation",
+                     "Generic HW Concrete",
+                     "Generic Wall Air Gap",
+                     "Generic Gypsum Board"
                   ]
                },
                {
-                  "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Exposed Floor",
+                  "type": "WindowConstructionAbridged",
+                  "identifier": "Generic Double Pane",
                   "materials": [
-                     "Generic Painted Metal",
-                     "Generic Ceiling Air Gap",
-                     "Generic 50mm Insulation",
-                     "Generic LW Concrete"
+                     "Generic Low-e Glass",
+                     "Generic Window Air Gap",
+                     "Generic Clear Glass"
                   ]
                },
                {
@@ -113,6 +100,22 @@
                      "Generic Painted Metal",
                      "Generic 25mm Insulation",
                      "Generic Painted Metal"
+                  ]
+               },
+               {
+                  "type": "WindowConstructionAbridged",
+                  "identifier": "Generic Single Pane",
+                  "materials": [
+                     "Generic Clear Glass"
+                  ]
+               },
+               {
+                  "type": "OpaqueConstructionAbridged",
+                  "identifier": "Generic Interior Wall",
+                  "materials": [
+                     "Generic Gypsum Board",
+                     "Generic Wall Air Gap",
+                     "Generic Gypsum Board"
                   ]
                },
                {
@@ -127,6 +130,31 @@
                   ]
                },
                {
+                  "type": "OpaqueConstructionAbridged",
+                  "identifier": "Generic Interior Door",
+                  "materials": [
+                     "Generic 25mm Wood"
+                  ]
+               },
+               {
+                  "type": "OpaqueConstructionAbridged",
+                  "identifier": "Generic Exposed Floor",
+                  "materials": [
+                     "Generic Painted Metal",
+                     "Generic Ceiling Air Gap",
+                     "Generic 50mm Insulation",
+                     "Generic LW Concrete"
+                  ]
+               },
+               {
+                  "type": "OpaqueConstructionAbridged",
+                  "identifier": "Generic Ground Slab",
+                  "materials": [
+                     "Generic 50mm Insulation",
+                     "Generic HW Concrete"
+                  ]
+               },
+               {
                   "type": "ShadeConstruction",
                   "identifier": "Generic Shade",
                   "solar_reflectance": 0.35,
@@ -134,19 +162,18 @@
                   "is_specular": false
                },
                {
-                  "type": "WindowConstructionAbridged",
-                  "identifier": "Generic Double Pane",
-                  "materials": [
-                     "Generic Low-e Glass",
-                     "Generic Window Air Gap",
-                     "Generic Clear Glass"
-                  ]
+                  "type": "AirBoundaryConstructionAbridged",
+                  "identifier": "Generic Air Boundary",
+                  "air_mixing_per_area": 0.1,
+                  "air_mixing_schedule": "Always On"
                },
                {
-                  "type": "WindowConstructionAbridged",
-                  "identifier": "Generic Single Pane",
+                  "type": "OpaqueConstructionAbridged",
+                  "identifier": "Generic Interior Floor",
                   "materials": [
-                     "Generic Clear Glass"
+                     "Generic Acoustic Tile",
+                     "Generic Ceiling Air Gap",
+                     "Generic LW Concrete"
                   ]
                },
                {
@@ -157,36 +184,139 @@
                      "Generic Ceiling Air Gap",
                      "Generic Acoustic Tile"
                   ]
-               },
-               {
-                  "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Roof",
-                  "materials": [
-                     "Generic Roof Membrane",
-                     "Generic 50mm Insulation",
-                     "Generic LW Concrete",
-                     "Generic Ceiling Air Gap",
-                     "Generic Acoustic Tile"
-                  ]
-               },
-               {
-                  "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Interior Door",
-                  "materials": [
-                     "Generic 25mm Wood"
-                  ]
-               },
-               {
-                  "type": "OpaqueConstructionAbridged",
-                  "identifier": "Generic Interior Wall",
-                  "materials": [
-                     "Generic Gypsum Board",
-                     "Generic Wall Air Gap",
-                     "Generic Gypsum Board"
-                  ]
                }
             ],
             "materials": [
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic Painted Metal",
+                  "roughness": "Smooth",
+                  "thickness": 0.0015,
+                  "conductivity": 45.0,
+                  "density": 7690.0,
+                  "specific_heat": 410.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.5,
+                  "visible_absorptance": 0.5
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic Brick",
+                  "roughness": "MediumRough",
+                  "thickness": 0.1,
+                  "conductivity": 0.9,
+                  "density": 1920.0,
+                  "specific_heat": 790.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.65,
+                  "visible_absorptance": 0.65
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic Wall Air Gap",
+                  "roughness": "Smooth",
+                  "thickness": 0.1,
+                  "conductivity": 0.667,
+                  "density": 1.28,
+                  "specific_heat": 1000.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.7,
+                  "visible_absorptance": 0.7
+               },
+               {
+                  "type": "EnergyWindowMaterialGlazing",
+                  "identifier": "Generic Low-e Glass",
+                  "thickness": 0.006,
+                  "solar_transmittance": 0.45,
+                  "solar_reflectance": 0.36,
+                  "solar_reflectance_back": 0.36,
+                  "visible_transmittance": 0.71,
+                  "visible_reflectance": 0.21,
+                  "visible_reflectance_back": 0.21,
+                  "infrared_transmittance": 0.0,
+                  "emissivity": 0.84,
+                  "emissivity_back": 0.047,
+                  "conductivity": 1.0,
+                  "dirt_correction": 1.0,
+                  "solar_diffusing": false
+               },
+               {
+                  "type": "EnergyWindowMaterialGlazing",
+                  "identifier": "Generic Clear Glass",
+                  "thickness": 0.006,
+                  "solar_transmittance": 0.77,
+                  "solar_reflectance": 0.07,
+                  "solar_reflectance_back": 0.07,
+                  "visible_transmittance": 0.88,
+                  "visible_reflectance": 0.08,
+                  "visible_reflectance_back": 0.08,
+                  "infrared_transmittance": 0.0,
+                  "emissivity": 0.84,
+                  "emissivity_back": 0.84,
+                  "conductivity": 1.0,
+                  "dirt_correction": 1.0,
+                  "solar_diffusing": false
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic Ceiling Air Gap",
+                  "roughness": "Smooth",
+                  "thickness": 0.1,
+                  "conductivity": 0.556,
+                  "density": 1.28,
+                  "specific_heat": 1000.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.7,
+                  "visible_absorptance": 0.7
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic 25mm Wood",
+                  "roughness": "MediumSmooth",
+                  "thickness": 0.0254,
+                  "conductivity": 0.15,
+                  "density": 608.0,
+                  "specific_heat": 1630.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.5,
+                  "visible_absorptance": 0.5
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic 50mm Insulation",
+                  "roughness": "MediumRough",
+                  "thickness": 0.05,
+                  "conductivity": 0.03,
+                  "density": 43.0,
+                  "specific_heat": 1210.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.7,
+                  "visible_absorptance": 0.7
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic LW Concrete",
+                  "roughness": "MediumRough",
+                  "thickness": 0.1,
+                  "conductivity": 0.53,
+                  "density": 1280.0,
+                  "specific_heat": 840.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.8,
+                  "visible_absorptance": 0.8
+               },
+               {
+                  "type": "EnergyMaterial",
+                  "identifier": "Generic HW Concrete",
+                  "roughness": "MediumRough",
+                  "thickness": 0.2,
+                  "conductivity": 1.95,
+                  "density": 2240.0,
+                  "specific_heat": 900.0,
+                  "thermal_absorptance": 0.9,
+                  "solar_absorptance": 0.8,
+                  "visible_absorptance": 0.8
+               },
                {
                   "type": "EnergyMaterial",
                   "identifier": "Generic Gypsum Board",
@@ -212,104 +342,10 @@
                   "visible_absorptance": 0.7
                },
                {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic Ceiling Air Gap",
-                  "roughness": "Smooth",
-                  "thickness": 0.1,
-                  "conductivity": 0.556,
-                  "density": 1.28,
-                  "specific_heat": 1000.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.7,
-                  "visible_absorptance": 0.7
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic LW Concrete",
-                  "roughness": "MediumRough",
-                  "thickness": 0.1,
-                  "conductivity": 0.53,
-                  "density": 1280.0,
-                  "specific_heat": 840.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.8,
-                  "visible_absorptance": 0.8
-               },
-               {
-                  "type": "EnergyWindowMaterialGlazing",
-                  "identifier": "Generic Low-e Glass",
-                  "thickness": 0.006,
-                  "solar_transmittance": 0.45,
-                  "solar_reflectance": 0.36,
-                  "solar_reflectance_back": 0.36,
-                  "visible_transmittance": 0.71,
-                  "visible_reflectance": 0.21,
-                  "visible_reflectance_back": 0.21,
-                  "infrared_transmittance": 0.0,
-                  "emissivity": 0.84,
-                  "emissivity_back": 0.047,
-                  "conductivity": 1.0,
-                  "dirt_correction": 1.0,
-                  "solar_diffusing": false
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic Roof Membrane",
-                  "roughness": "MediumRough",
-                  "thickness": 0.01,
-                  "conductivity": 0.16,
-                  "density": 1120.0,
-                  "specific_heat": 1460.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.65,
-                  "visible_absorptance": 0.65
-               },
-               {
-                  "type": "EnergyWindowMaterialGlazing",
-                  "identifier": "Generic Clear Glass",
-                  "thickness": 0.006,
-                  "solar_transmittance": 0.77,
-                  "solar_reflectance": 0.07,
-                  "solar_reflectance_back": 0.07,
-                  "visible_transmittance": 0.88,
-                  "visible_reflectance": 0.08,
-                  "visible_reflectance_back": 0.08,
-                  "infrared_transmittance": 0.0,
-                  "emissivity": 0.84,
-                  "emissivity_back": 0.84,
-                  "conductivity": 1.0,
-                  "dirt_correction": 1.0,
-                  "solar_diffusing": false
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic Brick",
-                  "roughness": "MediumRough",
-                  "thickness": 0.1,
-                  "conductivity": 0.9,
-                  "density": 1920.0,
-                  "specific_heat": 790.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.65,
-                  "visible_absorptance": 0.65
-               },
-               {
                   "type": "EnergyWindowMaterialGas",
                   "identifier": "Generic Window Air Gap",
                   "thickness": 0.0127,
                   "gas_type": "Air"
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic Wall Air Gap",
-                  "roughness": "Smooth",
-                  "thickness": 0.1,
-                  "conductivity": 0.667,
-                  "density": 1.28,
-                  "specific_heat": 1000.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.7,
-                  "visible_absorptance": 0.7
                },
                {
                   "type": "EnergyMaterial",
@@ -325,51 +361,15 @@
                },
                {
                   "type": "EnergyMaterial",
-                  "identifier": "Generic Painted Metal",
-                  "roughness": "Smooth",
-                  "thickness": 0.0015,
-                  "conductivity": 45.0,
-                  "density": 7690.0,
-                  "specific_heat": 410.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.5,
-                  "visible_absorptance": 0.5
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic 25mm Wood",
-                  "roughness": "MediumSmooth",
-                  "thickness": 0.0254,
-                  "conductivity": 0.15,
-                  "density": 608.0,
-                  "specific_heat": 1630.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.5,
-                  "visible_absorptance": 0.5
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic HW Concrete",
+                  "identifier": "Generic Roof Membrane",
                   "roughness": "MediumRough",
-                  "thickness": 0.2,
-                  "conductivity": 1.95,
-                  "density": 2240.0,
-                  "specific_heat": 900.0,
+                  "thickness": 0.01,
+                  "conductivity": 0.16,
+                  "density": 1120.0,
+                  "specific_heat": 1460.0,
                   "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.8,
-                  "visible_absorptance": 0.8
-               },
-               {
-                  "type": "EnergyMaterial",
-                  "identifier": "Generic 50mm Insulation",
-                  "roughness": "MediumRough",
-                  "thickness": 0.05,
-                  "conductivity": 0.03,
-                  "density": 43.0,
-                  "specific_heat": 1210.0,
-                  "thermal_absorptance": 0.9,
-                  "solar_absorptance": 0.7,
-                  "visible_absorptance": 0.7
+                  "solar_absorptance": 0.65,
+                  "visible_absorptance": 0.65
                }
             ]
          },
@@ -377,11 +377,17 @@
          "constructions": [
             {
                "type": "OpaqueConstructionAbridged",
-               "identifier": "Exterior Floor",
+               "identifier": "ceiling-floor-layer",
                "materials": [
-                  "floor_consol_layer",
-                  "Plywood_3/4in",
-                  "Carpet_n_pad"
+                  "Lumber_2x4"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "Interior Ceiling",
+               "materials": [
+                  "ceil_consol_layer",
+                  "Drywall_1/2in"
                ]
             },
             {
@@ -393,6 +399,48 @@
                   "OSB_7/16in",
                   "wall_consol_layer",
                   "Drywall_1/2in"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "Exterior Roof",
+               "materials": [
+                  "Asphalt_shingle",
+                  "OSB_1/2in"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "Exterior Floor",
+               "materials": [
+                  "floor_consol_layer",
+                  "Plywood_3/4in",
+                  "Carpet_n_pad"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "interiorwall",
+               "materials": [
+                  "Drywall_1/2in",
+                  "OSB_5/8in",
+                  "Drywall_1/2in"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "interiorwall_Rev",
+               "materials": [
+                  "Drywall_1/2in",
+                  "OSB_5/8in",
+                  "Drywall_1/2in"
+               ]
+            },
+            {
+               "type": "OpaqueConstructionAbridged",
+               "identifier": "ceiling-floor-layer_Rev",
+               "materials": [
+                  "Lumber_2x4"
                ]
             },
             {
@@ -414,43 +462,10 @@
                ]
             },
             {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "ceiling-floor-layer_Rev",
-               "materials": [
-                  "Lumber_2x4"
-               ]
-            },
-            {
                "type": "WindowConstructionAbridged",
                "identifier": "Exterior Window",
                "materials": [
                   "Glass"
-               ]
-            },
-            {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "interiorwall_Rev",
-               "materials": [
-                  "Drywall_1/2in",
-                  "OSB_5/8in",
-                  "Drywall_1/2in"
-               ]
-            },
-            {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "interiorwall",
-               "materials": [
-                  "Drywall_1/2in",
-                  "OSB_5/8in",
-                  "Drywall_1/2in"
-               ]
-            },
-            {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "Interior Ceiling",
-               "materials": [
-                  "ceil_consol_layer",
-                  "Drywall_1/2in"
                ]
             },
             {
@@ -469,70 +484,48 @@
                   "Plywood_3/4in",
                   "floor_consol_layer"
                ]
-            },
-            {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "Exterior Roof",
-               "materials": [
-                  "Asphalt_shingle",
-                  "OSB_1/2in"
-               ]
-            },
-            {
-               "type": "OpaqueConstructionAbridged",
-               "identifier": "ceiling-floor-layer",
-               "materials": [
-                  "Lumber_2x4"
-               ]
             }
          ],
          "materials": [
             {
                "type": "EnergyMaterialNoMass",
-               "identifier": "Air_4_in_vert",
-               "r_value": 0.158499169604493,
-               "roughness": "MediumRough",
-               "thermal_absorptance": 0.9,
-               "solar_absorptance": 0.7,
-               "visible_absorptance": 0.7
-            },
-            {
-               "type": "EnergyWindowMaterialSimpleGlazSys",
-               "identifier": "Glass",
-               "u_factor": 1.70358,
-               "shgc": 0.216875,
-               "vt": 0.88
-            },
-            {
-               "type": "EnergyMaterial",
-               "identifier": "Drywall_1/2in",
-               "roughness": "MediumRough",
-               "thickness": 0.0127000257446048,
-               "conductivity": 0.16009,
-               "density": 800.922646044499,
-               "specific_heat": 1087.84000823168,
+               "identifier": "Bldg_paper_felt",
+               "r_value": 0.0105666113069662,
+               "roughness": "Smooth",
                "thermal_absorptance": 0.9,
                "solar_absorptance": 0.7,
                "visible_absorptance": 0.7
             },
             {
                "type": "EnergyMaterial",
-               "identifier": "syn_stucco",
+               "identifier": "OSB_5/8in",
                "roughness": "MediumRough",
-               "thickness": 0.003048,
-               "conductivity": 0.0865,
-               "density": 400.0,
-               "specific_heat": 878.640006648665,
+               "thickness": 0.015875032180756,
+               "conductivity": 0.1163,
+               "density": 544.627399310259,
+               "specific_heat": 1213.36000918149,
                "thermal_absorptance": 0.9,
                "solar_absorptance": 0.7,
                "visible_absorptance": 0.7
             },
             {
                "type": "EnergyMaterial",
-               "identifier": "Lumber_2x4",
+               "identifier": "wall_consol_layer",
                "roughness": "Rough",
-               "thickness": 0.0890016,
-               "conductivity": 0.1154577,
+               "thickness": 0.1397,
+               "conductivity": 0.057165,
+               "density": 120.801,
+               "specific_heat": 1036.25775,
+               "thermal_absorptance": 0.9,
+               "solar_absorptance": 0.7,
+               "visible_absorptance": 0.7
+            },
+            {
+               "type": "EnergyMaterial",
+               "identifier": "door_const",
+               "roughness": "Smooth",
+               "thickness": 0.0422695734864227,
+               "conductivity": 0.0720096,
                "density": 512.64,
                "specific_heat": 767.58,
                "thermal_absorptance": 0.9,
@@ -552,13 +545,29 @@
                "visible_absorptance": 0.7
             },
             {
-               "type": "EnergyMaterial",
-               "identifier": "OSB_5/8in",
+               "type": "EnergyWindowMaterialSimpleGlazSys",
+               "identifier": "Glass",
+               "u_factor": 1.70358,
+               "shgc": 0.216875,
+               "vt": 0.88
+            },
+            {
+               "type": "EnergyMaterialNoMass",
+               "identifier": "Air_4_in_vert",
+               "r_value": 0.158499169604493,
                "roughness": "MediumRough",
-               "thickness": 0.015875032180756,
-               "conductivity": 0.1163,
-               "density": 544.627399310259,
-               "specific_heat": 1213.36000918149,
+               "thermal_absorptance": 0.9,
+               "solar_absorptance": 0.7,
+               "visible_absorptance": 0.7
+            },
+            {
+               "type": "EnergyMaterial",
+               "identifier": "Plywood_3/4in",
+               "roughness": "Rough",
+               "thickness": 0.01905,
+               "conductivity": 0.1154577,
+               "density": 544.68,
+               "specific_heat": 674.54,
                "thermal_absorptance": 0.9,
                "solar_absorptance": 0.7,
                "visible_absorptance": 0.7
@@ -577,6 +586,30 @@
             },
             {
                "type": "EnergyMaterial",
+               "identifier": "Drywall_1/2in",
+               "roughness": "MediumRough",
+               "thickness": 0.0127000257446048,
+               "conductivity": 0.16009,
+               "density": 800.922646044499,
+               "specific_heat": 1087.84000823168,
+               "thermal_absorptance": 0.9,
+               "solar_absorptance": 0.7,
+               "visible_absorptance": 0.7
+            },
+            {
+               "type": "EnergyMaterial",
+               "identifier": "sheathing_consol_layer",
+               "roughness": "Rough",
+               "thickness": 0.0127,
+               "conductivity": 0.0940184,
+               "density": 685.008,
+               "specific_heat": 1172.332,
+               "thermal_absorptance": 0.9,
+               "solar_absorptance": 0.7,
+               "visible_absorptance": 0.7
+            },
+            {
+               "type": "EnergyMaterial",
                "identifier": "Asphalt_shingle",
                "roughness": "MediumRough",
                "thickness": 0.00633985285170672,
@@ -589,24 +622,12 @@
             },
             {
                "type": "EnergyMaterial",
-               "identifier": "Plywood_3/4in",
-               "roughness": "Rough",
-               "thickness": 0.01905,
-               "conductivity": 0.1154577,
-               "density": 544.68,
-               "specific_heat": 674.54,
-               "thermal_absorptance": 0.9,
-               "solar_absorptance": 0.7,
-               "visible_absorptance": 0.7
-            },
-            {
-               "type": "EnergyMaterial",
-               "identifier": "wall_consol_layer",
-               "roughness": "Rough",
-               "thickness": 0.1397,
-               "conductivity": 0.057165,
-               "density": 120.801,
-               "specific_heat": 1036.25775,
+               "identifier": "syn_stucco",
+               "roughness": "MediumRough",
+               "thickness": 0.003048,
+               "conductivity": 0.0865,
+               "density": 400.0,
+               "specific_heat": 878.640006648665,
                "thermal_absorptance": 0.9,
                "solar_absorptance": 0.7,
                "visible_absorptance": 0.7
@@ -637,10 +658,10 @@
             },
             {
                "type": "EnergyMaterial",
-               "identifier": "door_const",
-               "roughness": "Smooth",
-               "thickness": 0.0422695734864227,
-               "conductivity": 0.0720096,
+               "identifier": "Lumber_2x4",
+               "roughness": "Rough",
+               "thickness": 0.0890016,
+               "conductivity": 0.1154577,
                "density": 512.64,
                "specific_heat": 767.58,
                "thermal_absorptance": 0.9,
@@ -655,27 +676,6 @@
                "conductivity": 0.1163,
                "density": 544.627399310259,
                "specific_heat": 1213.36000918149,
-               "thermal_absorptance": 0.9,
-               "solar_absorptance": 0.7,
-               "visible_absorptance": 0.7
-            },
-            {
-               "type": "EnergyMaterial",
-               "identifier": "sheathing_consol_layer",
-               "roughness": "Rough",
-               "thickness": 0.0127,
-               "conductivity": 0.0940184,
-               "density": 685.008,
-               "specific_heat": 1172.332,
-               "thermal_absorptance": 0.9,
-               "solar_absorptance": 0.7,
-               "visible_absorptance": 0.7
-            },
-            {
-               "type": "EnergyMaterialNoMass",
-               "identifier": "Bldg_paper_felt",
-               "r_value": 0.0105666113069662,
-               "roughness": "Smooth",
                "thermal_absorptance": 0.9,
                "solar_absorptance": 0.7,
                "visible_absorptance": 0.7
@@ -734,18 +734,18 @@
                "type": "RoofCeilingModifierSetAbridged"
             },
             "aperture_set": {
+               "operable_modifier": "generic_exterior_window_vis_0.64",
                "skylight_modifier": "generic_exterior_window_vis_0.64",
                "interior_modifier": "generic_interior_window_vis_0.88",
-               "operable_modifier": "generic_exterior_window_vis_0.64",
                "type": "ApertureModifierSetAbridged",
                "window_modifier": "generic_exterior_window_vis_0.64"
             },
             "door_set": {
-               "overhead_modifier": "generic_opaque_door_0.50",
-               "interior_modifier": "generic_opaque_door_0.50",
                "exterior_modifier": "generic_opaque_door_0.50",
                "interior_glass_modifier": "generic_interior_window_vis_0.88",
                "exterior_glass_modifier": "generic_exterior_window_vis_0.64",
+               "overhead_modifier": "generic_opaque_door_0.50",
+               "interior_modifier": "generic_opaque_door_0.50",
                "type": "DoorModifierSetAbridged"
             },
             "shade_set": {
@@ -758,10 +758,10 @@
                {
                   "modifier": null,
                   "type": "Plastic",
-                  "identifier": "generic_exterior_shade_0.35",
-                  "r_reflectance": 0.35,
-                  "g_reflectance": 0.35,
-                  "b_reflectance": 0.35,
+                  "identifier": "generic_wall_0.50",
+                  "r_reflectance": 0.5,
+                  "g_reflectance": 0.5,
+                  "b_reflectance": 0.5,
                   "specularity": 0.0,
                   "roughness": 0.0,
                   "dependencies": []
@@ -774,17 +774,6 @@
                   "g_transmissivity": 0.6975761815384331,
                   "b_transmissivity": 0.6975761815384331,
                   "refraction_index": null,
-                  "dependencies": []
-               },
-               {
-                  "modifier": null,
-                  "type": "Plastic",
-                  "identifier": "generic_wall_0.50",
-                  "r_reflectance": 0.5,
-                  "g_reflectance": 0.5,
-                  "b_reflectance": 0.5,
-                  "specularity": 0.0,
-                  "roughness": 0.0,
                   "dependencies": []
                },
                {
@@ -824,16 +813,6 @@
                },
                {
                   "modifier": null,
-                  "type": "Glass",
-                  "identifier": "generic_interior_window_vis_0.88",
-                  "r_transmissivity": 0.9584154328610596,
-                  "g_transmissivity": 0.9584154328610596,
-                  "b_transmissivity": 0.9584154328610596,
-                  "refraction_index": null,
-                  "dependencies": []
-               },
-               {
-                  "modifier": null,
                   "type": "Plastic",
                   "identifier": "generic_opaque_door_0.50",
                   "r_reflectance": 0.5,
@@ -852,6 +831,27 @@
                   "b_reflectance": 0.5,
                   "specularity": 0.0,
                   "roughness": 0.0,
+                  "dependencies": []
+               },
+               {
+                  "modifier": null,
+                  "type": "Plastic",
+                  "identifier": "generic_exterior_shade_0.35",
+                  "r_reflectance": 0.35,
+                  "g_reflectance": 0.35,
+                  "b_reflectance": 0.35,
+                  "specularity": 0.0,
+                  "roughness": 0.0,
+                  "dependencies": []
+               },
+               {
+                  "modifier": null,
+                  "type": "Glass",
+                  "identifier": "generic_interior_window_vis_0.88",
+                  "r_transmissivity": 0.9584154328610596,
+                  "g_transmissivity": 0.9584154328610596,
+                  "b_transmissivity": 0.9584154328610596,
+                  "refraction_index": null,
                   "dependencies": []
                },
                {
@@ -887,8 +887,8 @@
    "rooms": [
       {
          "type": "Room",
-         "identifier": "84092b20e79a46c99294479bbf8505f7",
-         "display_name": "84092b20e79a46c99294479bbf8505f7",
+         "identifier": "4e1fd50cb8414e409fa8600ad61b75b4",
+         "display_name": "4e1fd50cb8414e409fa8600ad61b75b4",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -1581,8 +1581,8 @@
       },
       {
          "type": "Room",
-         "identifier": "fa0bab3fca2245f4b1f45eb0a610a07f",
-         "display_name": "fa0bab3fca2245f4b1f45eb0a610a07f",
+         "identifier": "22d23f88106d4ff6a62813b9f3cd44bb",
+         "display_name": "22d23f88106d4ff6a62813b9f3cd44bb",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -2271,8 +2271,8 @@
       },
       {
          "type": "Room",
-         "identifier": "4de06d3fc9c243f4bbe9aceff4a689e9",
-         "display_name": "4de06d3fc9c243f4bbe9aceff4a689e9",
+         "identifier": "479a2c739d1c409d9126967701a6fe1e",
+         "display_name": "479a2c739d1c409d9126967701a6fe1e",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -3155,8 +3155,8 @@
       },
       {
          "type": "Room",
-         "identifier": "25493276c21a4ddd87928c472a362436",
-         "display_name": "25493276c21a4ddd87928c472a362436",
+         "identifier": "dd22e46b812742ca9a23dde56c60d0f8",
+         "display_name": "dd22e46b812742ca9a23dde56c60d0f8",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -4039,8 +4039,8 @@
       },
       {
          "type": "Room",
-         "identifier": "e26046c8a6b24c7f98765c49e143557b",
-         "display_name": "e26046c8a6b24c7f98765c49e143557b",
+         "identifier": "47701b4350564fd48a8db296d55deb58",
+         "display_name": "47701b4350564fd48a8db296d55deb58",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -4919,8 +4919,8 @@
       },
       {
          "type": "Room",
-         "identifier": "21a9b373eed2405a976caa3182c14341",
-         "display_name": "21a9b373eed2405a976caa3182c14341",
+         "identifier": "359aad6f1641475784554c5b07768c3c",
+         "display_name": "359aad6f1641475784554c5b07768c3c",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -5613,8 +5613,8 @@
       },
       {
          "type": "Room",
-         "identifier": "e7645cf83b1244f589903bddeb9e4815",
-         "display_name": "e7645cf83b1244f589903bddeb9e4815",
+         "identifier": "9a503d16fb974ac3994a8749638aa7e3",
+         "display_name": "9a503d16fb974ac3994a8749638aa7e3",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -6497,8 +6497,8 @@
       },
       {
          "type": "Room",
-         "identifier": "eb3f8503a30245a88a44745211c5db69",
-         "display_name": "eb3f8503a30245a88a44745211c5db69",
+         "identifier": "460c7c3fddf44a1bbbf98943ea5f736a",
+         "display_name": "460c7c3fddf44a1bbbf98943ea5f736a",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -7377,8 +7377,8 @@
       },
       {
          "type": "Room",
-         "identifier": "89fee206ef8746e8a10a40c2af041e84",
-         "display_name": "89fee206ef8746e8a10a40c2af041e84",
+         "identifier": "b740cd16664b43fda5cc4f410009982c",
+         "display_name": "b740cd16664b43fda5cc4f410009982c",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -8071,8 +8071,8 @@
       },
       {
          "type": "Room",
-         "identifier": "cbea6e4ca403484a898faddce170be6d",
-         "display_name": "cbea6e4ca403484a898faddce170be6d",
+         "identifier": "73bc25824ffd4bea808839003db330b8",
+         "display_name": "73bc25824ffd4bea808839003db330b8",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -8955,8 +8955,8 @@
       },
       {
          "type": "Room",
-         "identifier": "a383ae13e44e4f2794222bf077d40b10",
-         "display_name": "a383ae13e44e4f2794222bf077d40b10",
+         "identifier": "5e0e9b6efba9465aac1d1f0956a236b7",
+         "display_name": "5e0e9b6efba9465aac1d1f0956a236b7",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -9839,8 +9839,8 @@
       },
       {
          "type": "Room",
-         "identifier": "5ea42a9cc156438e9d809ec8cd283a44",
-         "display_name": "5ea42a9cc156438e9d809ec8cd283a44",
+         "identifier": "72c9ac74ff244762a9de814bed73a607",
+         "display_name": "72c9ac74ff244762a9de814bed73a607",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -10533,8 +10533,8 @@
       },
       {
          "type": "Room",
-         "identifier": "8de08ce039984348ba00f0ced4ef4702",
-         "display_name": "8de08ce039984348ba00f0ced4ef4702",
+         "identifier": "2e3993aa4adc4e8cabc034504c66f069",
+         "display_name": "2e3993aa4adc4e8cabc034504c66f069",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -11417,8 +11417,8 @@
       },
       {
          "type": "Room",
-         "identifier": "6f001e1fa426443d9ed922ab5957a022",
-         "display_name": "6f001e1fa426443d9ed922ab5957a022",
+         "identifier": "c4821d63ae814089af4c8b6a94b90977",
+         "display_name": "c4821d63ae814089af4c8b6a94b90977",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -12217,8 +12217,8 @@
       },
       {
          "type": "Room",
-         "identifier": "98fb273bac7d42ef903c48677f4bfddd",
-         "display_name": "98fb273bac7d42ef903c48677f4bfddd",
+         "identifier": "48c60860b6a24226b434c8d79aa27a3f",
+         "display_name": "48c60860b6a24226b434c8d79aa27a3f",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -13101,8 +13101,8 @@
       },
       {
          "type": "Room",
-         "identifier": "37647ebe1d2f4fb3b23f845c3ca0e409",
-         "display_name": "37647ebe1d2f4fb3b23f845c3ca0e409",
+         "identifier": "cba0fd9a81fb48aaaeb37fe1c04c49bf",
+         "display_name": "cba0fd9a81fb48aaaeb37fe1c04c49bf",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -13985,8 +13985,8 @@
       },
       {
          "type": "Room",
-         "identifier": "2654c1ccab9e4ad8b52d3ba10536892e",
-         "display_name": "2654c1ccab9e4ad8b52d3ba10536892e",
+         "identifier": "96ac9309119a44a6b2bdfd8becd77ee3",
+         "display_name": "96ac9309119a44a6b2bdfd8becd77ee3",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -14679,8 +14679,8 @@
       },
       {
          "type": "Room",
-         "identifier": "4b842c8fd11e43fbb83f5c6f531fc17e",
-         "display_name": "4b842c8fd11e43fbb83f5c6f531fc17e",
+         "identifier": "4c88bd20981b4f0281e4ba7d8ff4af82",
+         "display_name": "4c88bd20981b4f0281e4ba7d8ff4af82",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -15563,8 +15563,8 @@
       },
       {
          "type": "Room",
-         "identifier": "098ae643959341b5a0b41def68936768",
-         "display_name": "098ae643959341b5a0b41def68936768",
+         "identifier": "1ded880e86754fe7809ce4778853c9bc",
+         "display_name": "1ded880e86754fe7809ce4778853c9bc",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
@@ -16336,8 +16336,8 @@
       },
       {
          "type": "Room",
-         "identifier": "8ae53ffd8e684b078a3da65d71fcde7d",
-         "display_name": "8ae53ffd8e684b078a3da65d71fcde7d",
+         "identifier": "8b98888bc4f742a8870652d975e79bf7",
+         "display_name": "8b98888bc4f742a8870652d975e79bf7",
          "properties": {
             "type": "RoomPropertiesAbridged",
             "energy": {
