@@ -6,8 +6,8 @@ from utils import add_louver_shade
 import plotly as plt
 import plotly.express as px
 import pandas as pd
-import honeybee_vtk
 import uuid
+from honeybee_vtk.model import Model as vtk_mod
 
 st.set_page_config(layout="wide", 
                    page_title='Sensitivity Study',
@@ -66,7 +66,7 @@ if configure:
     new_model = Model(identifier='NewModel', rooms=rooms, orphaned_shades=model.shades)
     
     
-    model_vtk = honeybee_vtk.model.Model.from_hbjson(
+    model_vtk = vtk_mod.from_hbjson(
         new_model.to_hbjson('.', '.', 3)
     )
     model_vtk.to_html()
