@@ -2,6 +2,6 @@ streamlit
 plotly
 honeybee-energy
 honeybee-radiance
-honeybee-vtk==0.33.0
+honeybee-vtk
 streamlit-vtkjs>=0.2.0
 ladybug_rhino
