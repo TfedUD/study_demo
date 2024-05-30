@@ -7,7 +7,6 @@ import plotly as plt
 import plotly.express as px
 import pandas as pd
 import honeybee_vtk
-import honeybee_vtk.model
 import uuid
 
 st.set_page_config(layout="wide", 
