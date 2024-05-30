@@ -1,2 +1,6 @@
 streamlit>=1.35.0
 plotly>=5.22.0
+honeybee-energy>=1.105
+honeybee-radiance>=1.66
+honeybee-vtk>=0.39
+ladybug_rhino>=1.42
