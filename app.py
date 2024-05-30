@@ -7,7 +7,6 @@ import plotly as plt
 import plotly.express as px
 import pandas as pd
 import honeybee_vtk
-from honeybee_vtk import model as vtk_model
 import uuid
 
 st.set_page_config(layout="wide", 
@@ -68,7 +67,7 @@ if configure:
     
     #new_model.to_hbjson(name='new_model')
     
-    model_vtk = vtk_model.Model.from_hbjson(
+    model_vtk = honeybee_vtk.model.Model.from_hbjson(
         new_model.to_hbjson('.', '.', 3)
     )
     model_vtk.to_html()
