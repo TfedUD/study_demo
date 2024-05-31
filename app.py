@@ -7,7 +7,6 @@ import plotly as plt
 import plotly.express as px
 import pandas as pd
 import uuid
-from honeybee_vtk.model import Model as vtk_mod
 from honeybee_display.model import model_to_vis_set
 from ladybug_vtk.visualization_set import VisualizationSet as VTKVisualizationSet
 from pollination_streamlit_viewer import viewer
