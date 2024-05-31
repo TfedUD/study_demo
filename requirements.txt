@@ -7,4 +7,4 @@ ladybug_rhino
 honeybee-display==0.3.8
 pydantic
 pollination-streamlit-viewer
-ladybug-vtk==0.14.0
+ladybug-vtk>=0.14.0
