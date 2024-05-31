@@ -8,6 +8,10 @@ import plotly.express as px
 import pandas as pd
 import uuid
 from honeybee_vtk.model import Model as vtk_mod
+from honeybee_display.model import model_to_vis_set
+from ladybug_vtk.visualization_set import VisualizationSet as VTKVisualizationSet
+from pollination_streamlit_viewer import viewer
+from pathlib import Path
 
 st.set_page_config(layout="wide", 
                    page_title='Sensitivity Study',
@@ -49,10 +53,7 @@ w_depth = st.selectbox("West Depth", (.1,.2,.3,.4))
 s_count = st.selectbox("Shade Count", (2,4,6))
 
 
-
-
-
-configure = st.button("Configure Model")
+configure = st.toggle("Configure Model")
 
 if configure:
     model = Model.from_hbjson('multi_fam.hbjson')
@@ -66,18 +67,39 @@ if configure:
     new_model = Model(identifier='NewModel', rooms=rooms, orphaned_shades=model.shades)
     
     
-    model_vtk = vtk_mod.from_hbjson(
-        new_model.to_hbjson('.', '.', 3)
+    vis_set = model_to_vis_set(new_model)
+    vis_s = VTKVisualizationSet.from_visualization_set(vis_set)
+    output = vis_s.to_vtkjs(folder='.', name='model_vtkjs')
+    content = Path('model_vtkjs.vtkjs').read_bytes()
+    
+    viewer(
+        content = content,
+        key = 'vtkjs viewer',
+        subscribe = False,
+        style={
+            'height':'800px',
+            'width': '800px'
+        }
+        
     )
-    model_vtk.to_html()
-
-    html_file = open('model.html', 'r', encoding='utf-8')
-    source = html_file.read()
-    compo.html(source, height=800, width=800)
-
 
     
 elif not configure:
-    html_file = open('model.html', 'r', encoding='utf-8')
-    source = html_file.read()
-    compo.html(source, height=800, width=800)
+    # html_file = open('model.html', 'r', encoding='utf-8')
+    # source = html_file.read()
+    # compo.html(source, height=800, width=800)
+    model = Model.from_hbjson('multi_fam.hbjson')
+    vis_set = model_to_vis_set(model)
+    vtk_set = VTKVisualizationSet.from_visualization_set(vis_set)
+    output = vtk_set.to_vtkjs(folder='.', name='base_model_vtkjs')
+    content = Path('base_model_vtkjs.vtkjs').read_bytes()
+    
+    viewer(
+        content = content,
+        key = 'demo_viewer',
+        subscribe = False,
+        style={
+            'height':'800px',
+            'width': '800px'
+        }
+    )
