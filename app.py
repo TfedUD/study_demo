@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as compo
 from honeybee.model import Model
 from honeybee.room import Room
-from .utils import add_louver_shade
+from utils.utils import add_louver_shade
 import plotly as plt
 import plotly.express as px
 import pandas as pd
