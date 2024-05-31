@@ -84,9 +84,7 @@ if configure:
 
     
 elif not configure:
-    # html_file = open('model.html', 'r', encoding='utf-8')
-    # source = html_file.read()
-    # compo.html(source, height=800, width=800)
+    
     model = Model.from_hbjson('multi_fam.hbjson')
     vis_set = model_to_vis_set(model)
     vtk_set = VTKVisualizationSet.from_visualization_set(vis_set)
