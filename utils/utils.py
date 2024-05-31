@@ -13,31 +13,8 @@ from honeybee_energy.lib.constructions import shade_construction_by_identifier
 from honeybee_radiance.lib.modifiers import modifier_by_identifier
 from ladybug_geometry.geometry2d.pointvector import Vector2D
 
-from honeybee_display.model import VisualizationSet, model_to_vis_set
-from ladybug_vtk.visualization_set import VisualizationSet as VTKVisualizationSet
-from pydantic import BaseModel
-from typing import Dict
 from pathlib import Path
-class VTKTranslate(BaseModel):
 
-    hbjson: Dict#[str, t.Any]
-
-    def hbjson_to_vs(self) -> VisualizationSet:
-        try:
-            hb_model = HBModel.from_dict(data=self.hbjson)
-        except Exception as err:
-            raise Failed(err)
-        return model_to_vis_set(
-            hb_model, color_by='type', include_wireframe=True,
-            room_attr='display_name', room_text_labels=True
-        )
-
-    def vs_to_file(self, vs: VisualizationSet) -> Path:
-        folder = config.temp_path
-        name = str(uuid4())
-        vtk_vs = VTKVisualizationSet.from_visualization_set(vs)
-        output = vtk_vs.to_vtkjs(folder=folder, name=name)
-        return Path(output)
     
 
 def can_host_apeture(face):
