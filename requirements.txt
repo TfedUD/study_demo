@@ -4,7 +4,8 @@ honeybee-energy
 honeybee-radiance
 streamlit-vtkjs>=0.2.0
 ladybug_rhino
-honeybee-display==0.3.8
+honeybee-display>=0.3.8
 pydantic
 pollination-streamlit-viewer
 ladybug-vtk>=0.14.0
+vtk
