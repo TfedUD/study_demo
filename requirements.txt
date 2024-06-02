@@ -11,4 +11,3 @@ ladybug-vtk>=0.14.0
 vtk
 setuptools==70.0.0
 libgl1
-libglib2.0-0
