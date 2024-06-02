@@ -10,4 +10,3 @@ pollination-streamlit-viewer
 ladybug-vtk>=0.14.0
 vtk
 setuptools==70.0.0
-libgl1
